@@ -70,7 +70,7 @@ autocmd BufNewFile,BufFilePre,BufRead *.md,*.txt set filetype=markdown.pandoc
 source $VIMSTARTUP/mappings.vim
 source $VIMSTARTUP/pluginmanager.vim
 source $VIMSTARTUP/pluginconfigurations.vim
-source $VIMSTARTUP/stationCustom.vim
+"source $VIMSTARTUP/stationCustom.vim
 
 
 
