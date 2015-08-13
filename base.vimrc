@@ -4,4 +4,5 @@ else
     let $VIMHOME = $HOME."/.vim"
 endif
 
+"source $VIMHOME/old_vimrc/.vimrc
 source $VIMHOME/startup/master.vim
