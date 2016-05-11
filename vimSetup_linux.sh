@@ -1,13 +1,15 @@
 #!/bin/bash
 #direct acces by url: https://raw.githubusercontent.com/MecuSorin/vim/master/vimSetup_linux.sh
 
-mkdir -p ~/.vim ~/.vim/undoHistory ~/.vim/autoload ~/.vim/bundle ~/.vim/old_vimrc
+mkdir -p ~/.vim ~/.vim/.undo ~/.vim/.swp ~/.vim/.backup ~/.vim/autoload ~/.vim/bundle ~/.vim/old_vimrc
 git clone https://github.com/MecuSorin/vim.git ~/.vim/todelete
 cp ~/.vimrc ~/.vim/old_vimrc
-cp ~/.vim/todelete/base.vimrc ~/.vimrc
+cp ~/.vim/todelete/.vimrc ~/.vimrc
 cp -r ~/.vim/todelete/startup ~/.vim
+cp -r ~/.vim/todelete/colors ~/.vim
 rm -rf ~/.vim/todelete
 dos2unix ~/.vim/startup/*
+dos2unix ~/.vimrc
 
 
 # Install plugins, if is used with sed to disable this step
